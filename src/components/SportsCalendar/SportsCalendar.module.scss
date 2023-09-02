@@ -1,0 +1,33 @@
+.sports-calendar {
+  display: flex;
+  height: 54px;
+  padding: 0 50px;
+  border: 1px solid #282828;
+  background: var(--main-gradient);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    margin: 0 1px;
+    background: var(--button-gradient);
+    border-left: 1px solid rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: skew(-15deg);
+    &:hover, &--current {
+      background: var(--bottom-calendar-gradient);
+      box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.09) inset;
+    }
+    &--current {
+      box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.09) inset, 0px 2px 0px 0px #55AD57 inset!important;
+    }
+  }
+  &__btn-text {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--white);
+    transform: skew(15deg);
+  }
+}

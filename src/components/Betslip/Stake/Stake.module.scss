@@ -1,0 +1,110 @@
+.stake {
+  position: sticky;
+  bottom: 0;
+  padding: 14px;
+  border-radius: 4px 4px 0px 0px;
+  background: #1B1B1B;
+  z-index: 100;
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  &__info-title {
+    flex-grow: 1;
+    color: rgba(255,255,255,0.60);
+    font-size: 12px;
+    line-height: 14px;
+  }
+  &__info-data {
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+    margin-left: 8px;
+    color: var(--white);
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
+    svg {
+      margin-right: 4px;
+    }
+  }
+  &__group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  &__group-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 32px;
+    color: #F9F9F9;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border-top: 1px solid #2D2D2D;
+    border-bottom: 1px solid #2D2D2D;
+    border-left: 1px solid #2D2D2D;
+    background: #0E0E0E;
+    &:last-child {
+      border-right: 1px solid #2D2D2D;
+    }
+    &--before, &--after {
+      width: 32px;
+      border-right: 1px solid #2D2D2D;
+    }
+    &--before {
+      margin-right: 4px;
+    }
+    &--after {
+      margin-left: 4px;
+    }
+  }
+  &__group-prepend, &__group-append {
+    position: absolute;
+    top: calc(50% - 7px);
+    color: #CACACA;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  &__group-prepend {
+    left: 10px;
+  }
+  &__group-append {
+    right: 10px;
+  }
+  &__group-input {
+    padding: 10px 42px 10px 34px;
+    width: 100%;
+    height: 32px;
+    color: var(--white);
+    text-align: right;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    border-radius: 2px;
+    border: 1px solid #2D2D2D;
+    background: #0E0E0E;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    border-radius: 3px;
+    background: var(--green-gradient);
+  }
+}

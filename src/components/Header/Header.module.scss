@@ -1,0 +1,115 @@
+.header {
+  display: block;
+  height: 70px;
+  padding: 0 10px;
+  background: var(--black);
+  background: var(--main-gradient);
+  border-bottom: 1px solid #2D2D2D;
+  margin-bottom: 2px;
+}
+
+.logo {
+  display: block;
+}
+
+.nav {
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+  a {
+    color: var(--white);
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 25px 15px;
+    transition: box-shadow .25s ease-in-out;
+    &:hover, &:focus {
+      box-shadow: 0px 13px 33px 0px rgba(0,0,0,0.30) inset;
+    }
+    &:active, &:global(.active) {
+      box-shadow: 0px 13px 33px 0px rgba(0,0,0,0.30) inset, 0 3px 0 0 var(--green) inset;
+    }
+  }
+}
+
+.btn-dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-left: 12px;
+  color: var(--white);
+  background: var(--black);
+  border-radius: 3px;
+}
+
+.panel-user {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  margin-left: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  background-color: var(--black);
+  border-radius: 3px;
+  a {
+    margin-left: 12px;
+    color: var(--white);
+    text-decoration: none;
+    transition: color .25s ease-in-out;
+    &:last-child {
+      margin-right: 12px;
+    }
+    &:hover, &:focus {
+      color: var(--green);
+    }
+  }
+}
+
+.divider-small {
+  display: block;
+  width: 1px;
+  height: 24px;
+  margin-left: 12px;
+  background: var(--black);
+  box-shadow: -1px 0px 0px 0px rgba(255,255,255,0.05);
+}
+
+.btn-withdraw {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  min-height: 44px;
+  margin-left: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--white);
+  background: var(--green);
+  background: var(--green-gradient);
+  border-radius: 3px;
+}
+
+.divider {
+  display: block;
+  width: 1px;
+  height: 60px;
+  margin-left: 12px;
+  background: var(--black);
+  box-shadow: -1px 0px 0px 0px rgba(255,255,255,0.05);
+}
+
+.btn-logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-left: 12px;
+  color: var(--white);
+  background: var(--red);
+  background: var(--red-gradient);
+  border-radius: 3px;
+}

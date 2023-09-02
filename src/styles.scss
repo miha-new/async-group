@@ -1,0 +1,118 @@
+@import-normalize;
+
+:root {
+  --black: #151515;
+  --white: #FFF;
+  --green: #22B14C;
+  --orange: #F9C336;
+  --red: #D21034;
+
+  --red-gradient: linear-gradient(180deg, #C50F2D 0%, #571114 100%);
+  --white-gradient: linear-gradient(180deg, #F1F1F1 0%, #9E9E9E 100%);
+  --green-gradient: linear-gradient(180deg, #54B052 0%, #287226 100%);
+  --main-gradient: linear-gradient(180deg, #232323 0%, #151515 100%);
+  --button-gradient: linear-gradient(180deg, #3E3E3E 0%, #131313 100%);
+  --bottom-calendar-gradient: linear-gradient(181deg, rgba(92, 92, 92, 0.57) 0%, rgba(46, 46, 46, 0.57) 100%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #0E0E0E;
+  color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#app {
+  min-width: 1600px;
+  min-height: 720px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.grow-0 {
+  flex-grow: 0;
+}
+
+.items-center	{
+  align-items: center;
+}
+
+.w-180 {
+  width: 180px;
+}
+
+.min-h-0 {
+  min-height: 0px;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-green {
+  color: var(--green);
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.px-2 {
+  padding-left: 2px;
+  padding-right: 2px;
+}

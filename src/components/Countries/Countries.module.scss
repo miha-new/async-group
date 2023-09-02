@@ -1,0 +1,26 @@
+.countries {
+  position: relative;
+  background-color: var(--black);
+  min-height: 100%;
+  &__head {
+    position: sticky;
+    top: 0;
+    background-color: var(--black);
+    z-index: 100;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  &__title-text {
+    color: #F9F9F9;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+  &__body {
+    position: relative;
+    padding: 6px;
+  }
+}
